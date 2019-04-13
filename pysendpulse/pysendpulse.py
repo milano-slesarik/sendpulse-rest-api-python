@@ -23,8 +23,8 @@ except ImportError:
             from django.utils import simplejson as json
         except ImportError:
             raise ImportError('A json library is required to use this python library')
-
-logging.basicConfig(format='%(levelname)-8s [%(asctime)s]  %(message)s', level=logging.DEBUG)
+# This causes logging into django console
+# logging.basicConfig(format='%(levelname)-8s [%(asctime)s]  %(message)s', level=logging.DEBUG)
 
 
 class PySendPulse:
